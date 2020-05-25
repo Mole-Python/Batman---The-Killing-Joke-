@@ -1,3 +1,9 @@
+#Welcome to a brief game version of one of the greatest Batman stories.
+#The killing Joke
+
+#Create functions used in the game and layout logically based on the story
+
+#Begining and choices
 def intro():
     print("You arrive at Arkham Asylum")
     print("You head to cell number 0801 to talk to the joker")
@@ -11,10 +17,12 @@ def intro():
     else:
         game_over("You returned to the Batcave")
 
+#define game over senario
 def game_over(end):
     print(end, "Game over")
     exit(0)
 
+#Talk to the imposter
 def talk_to_joker():
     print("You came to talk but realised he was an imposter")
     print("You make one of the following decisions:'interrogate', kill', or 'play cards'")
@@ -35,6 +43,7 @@ def talk_to_joker():
     else:
         game_over("learn to follow instructions.")
 
+#Meet up with Barbara
 def barbra():
     print("She tells you where the Joker took Gordan")
     print("You type one of the following: \n 1. ignore her \n 2. listen to her.")
@@ -52,6 +61,7 @@ def barbra():
         else:
             print("You have to pick one of the options") 
 
+#Show down at the Amusement park
 def Amusment_park():
     print("You free Gordan and chase after the Joker")
     print("You either go \"left\" or \"right\"")
