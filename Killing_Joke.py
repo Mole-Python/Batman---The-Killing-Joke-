@@ -1,5 +1,5 @@
 #Welcome to a brief game version of one of the greatest Batman stories.
-#The killing Joke
+#The killing Joke Story game 
 
 #Create functions used in the game and layout logically based on the story
 
@@ -26,7 +26,7 @@ def game_over(end):
 def talk_to_joker():
     print("You came to talk but realised he was an imposter")
     print("You make one of the following decisions:'interrogate', kill', or 'play cards'")
-    
+
     choice = input('> ')
 
     if choice == "interrogate":
@@ -49,7 +49,7 @@ def barbra():
     print("You type one of the following: \n 1. ignore her \n 2. listen to her.")
     go_to_gordan = False
     while True:
-        
+
         choice = input('> ')
 
         if choice == "ignore her":
@@ -59,7 +59,7 @@ def barbra():
             go_to_gordan = True
             Amusment_park()
         else:
-            print("You have to pick one of the options") 
+            print("You have to pick one of the options")
 
 #Show down at the Amusement park
 def Amusment_park():
